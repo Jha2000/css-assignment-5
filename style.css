@@ -1,0 +1,356 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    width: 100%;
+}
+#f_name{grid-area: f_name;}
+#l_name{grid-area: l_name;}
+#email{grid-area: email;}
+#mobile{grid-area: mobile;}
+#message{grid-area: message;}
+#send_button{grid-area: send_button;}
+.logo{grid-area: logo;}
+.number{grid-area: number;}
+.navigation{grid-area: navigation-desktop;}
+.header{
+    background-color: #efeff1;
+    border: 1px solid #cdcdcd;
+    height: 28px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+em{
+    vertical-align: middle;
+    margin-top: 5px;
+}
+.form-area{
+    display: flex;
+    padding: 0px 50px;
+    background-color: #efeff1;
+    text-align: center;
+    margin: auto;
+}
+.form_heading h1,h3{
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+.form_heading button{
+    margin: 20px;
+    text-align: center;
+    background-color: #ff8800;
+    height: 28px;
+    min-width: 120px;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    margin: 10px;
+}
+.navigation li{
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    background-color: #ff8800;
+    margin: 10px;
+    padding: 10px 20px;
+
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin-top: 0px;
+}
+.navigation{
+    grid-template-columns: auto;
+    background-color: #efeff1;
+    margin: auto;
+    display: none;
+    margin-bottom: 20px;
+    justify-content: space-around;
+
+}
+.navigation div{
+    margin: 20px;
+}
+.navbar_button{
+    background-color: white;
+    height: 20px;
+    font-weight: bold;
+}
+#number{
+    display: none;
+}
+.contact_detail{
+    display: grid;
+    grid-template-areas: 'f_name''l_name' 'email''mobile''message''send_button';
+}
+.contact_detail input,textarea{
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    margin: 5px;
+    height: 24px;
+    padding-left: 5px;
+    width: 90%;
+
+}
+.contact_detail textarea{
+    height: 50%;
+    padding: 8px;
+    max-width: 85%;
+
+}
+#submit_contact{
+    color: white;
+    background-color: #ff8800;
+    height: 28px;
+    min-width: 190px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px 0px 15px;
+    border: 0px;
+
+}
+
+/* ...for desktop... */
+.nav_for_desktop{
+    display: none;
+    grid-template-areas: 'logo number' 'logo navigation-desktop';
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.logo{
+    margin: 15px;
+}
+.nav_for_desktop{
+    height: 50px;
+}
+.navigation-desktop li{
+    list-style-type: none;
+    padding: 20px;
+}
+.navigation_for_desktop ul{
+    display: flex;
+
+}
+.navigation-desktop ul a{
+    text-decoration: none;
+    color: #949494;
+
+}
+.number{
+    text-align: right;
+    font-size: 32px;
+    padding: 10px 10px 0px 0px;
+}
+
+/* ......contant area........ */
+ .main_content-area div{
+    padding: 0px 7px;
+ }
+ .content_area1{
+    background-color: #209bde;
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+ }
+ .content-area1 h1{
+    margin-bottom: 0px;
+ }
+ #design_it_now{
+    background-color: whitesmoke;
+    border: 0.5px solid #1c84b7;
+    height: 32px;
+    color: #209bde;
+    font-weight: bold;
+    font-size: 16px;
+ }
+
+ #design_it_div{
+    margin: 10px 0px;
+ }
+
+ /* ....video area.... */
+
+ .video-advertise img{
+    width: 100%;
+
+ }
+ .video-advertise{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #efeff1;
+    padding-top: 20px;
+
+ }
+ .video-advertise h1{
+    margin-bottom: 0px;
+ }
+ .video-advertise h3{
+    margin-top: 0px;
+ }
+ .learn_more{
+    background-color: #ff8800;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid orange;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+ }
+
+ /* blog area.......... */
+ .main_blog_container{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 20px 0px;
+    justify-content: space-around;
+
+ }
+ .main_blog_container img{
+    width: 100%;
+    border-radius: 5px;
+
+ }
+ .blog{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    max-width: 290px;
+    min-height: 360px;
+    margin-top: 20px;
+    box-shadow: 5px 5px #f5f1f1;
+ }
+ .blog h2{
+    margin: 5px;
+ }
+ #blog_description{
+    font-size: 14px;
+    margin: 5px;
+ }
+ .learn_more_blog_button{
+    margin: 20px auto;
+    background-color: #ff8800;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid orange;
+    font-weight: bold;
+    height: 40px;
+    vertical-align: middle;
+ }
+
+ .footer{
+    display: grid;
+    background-color: #cdcdcd;
+    grid-template-columns: auto;
+
+ }
+ .footer div{
+    margin: 10px;
+ }
+ .footer hr{
+    width: 70%;
+    float: left;
+    margin: 0px;
+ }
+ .footer h3{
+    color: black;
+ }
+ .footer li{
+    display: block;
+    margin: 5px;
+
+ }
+ .footer ul{
+    padding: 0px;
+ }
+ .footer a{
+    text-decoration: none;
+    color: #3a3a3a;
+ }
+
+ /* ...media query... */
+ @media(min-width:972px)
+ {
+    .contact_detail{
+        grid-template-areas: 'f_name''l_name''email mobile''message message''send_button send_button';
+    }
+    .form_area{
+        grid-template-columns: auto auto;
+    }
+    .form_headinh{
+        width: 500px;
+    }
+    .contact_detail textarea{
+        min-width: 96%;
+        padding: 5px;
+    }
+    #submit_contact{
+        min-width: 96%;
+    }
+    /* content area */
+    .content-area1{
+        grid-template-columns: auto auto;
+        background-color: #fff;
+    }
+    #design_it_now{
+        width: 125px;
+    }
+    #design-it-div{
+        margin: auto;
+    }
+    .video-advertise{
+        grid-template-columns: auto auto;
+    }
+    .video-advertise img{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+ }
+@media(min-width:762px)
+{
+    .main_blog_container{
+        grid-template-columns: auto auto;
+    }
+    .learn_more_blog_button{
+        margin: auto;
+    }
+
+}
+@media(min-width:972px)
+{
+    .main_blog_container{
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+    }
+    .learn_more_blog_button{
+        margin: auto;
+    }
+    .footer{
+        grid-template-columns: auto auto auto;
+        padding: 100px;
+    }
+    #bars{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .nav_for_desktop{
+        display: grid;
+    }
+}
+
+
