@@ -17,9 +17,11 @@ body{
 .number{grid-area: number;}
 .navigation{grid-area: navigation-desktop;}
 .header{
+    overflow: hidden;
+    padding: 10px 10px;
     background-color: #efeff1;
     border: 1px solid #cdcdcd;
-    height: 28px;
+    height: 10px;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
