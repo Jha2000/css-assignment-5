@@ -1,156 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web layout</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> 
+  <title>Document</title>
 </head>
 <body>
-    <!-- ........................................................................................ -->
-    <div class="header">
-        <div>My Shopping cart</div>
-        <div>Sign In/Register</div>
-    </div>
-
-    <!-- .........................nav for mobile................................................................... -->
-    <div class="navbar">
-        <div style="width:95%"><img src="yard sign.png"><br>Yard sign </div>
-        <div><button name="bars" id="bars" onclick="$ ('.navigation') .css('display','grid');"><em class=""fa fa-bars></em></button></div>
-
-    </div>
-    <div class="navigation">
-        <ul>
-            <li><a href="#">Banner</a></li>
-            <li><a href="#">Accesories</a></li>
-            <li><a href="#">Gallary</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Price</a></li>
-            <li><a href="#">Material</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Cutom Quote</a></li>
-            <li style="background-color: aliceblue;"><button style="border-radius: 80%; font-size: 24px; background-color: rgb(189, 102, 102);" onclick="$('.navigation')"></button></li>
-        </ul>
-    </div>
-
-    <!-- ................................................navbar for desktop........................................ -->
-    <div class="nav_for_desktop">
-        <div class="logo"><img src="yard sign.png"><br>Yard Sign
-        <div class="number">512-219-8000</div>
-        </div>
-        <div class="navigation_desktop">
-            <ul>
-                <li><a href="#">Banner</a></li>
-                <li><a href="#">accesories</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Price</a></li>
-                <li><a href="#">Material</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Cutom Quote</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- ................................................video area........................................................ -->
-
-    <div class="form-area">
-        <div class="form_heading">
-            <div><h1 style="color: #555555">Big Heading</h1></div>
-            <div><h3 style="color: #555555">Small Sub Heading Here</h3></div>
-            <div style="color: #555555">And this is copied pasted over and over and over over and over over over and over over</div>
-            <div><button>Get Started</button></div>
-        </div>
-        <div class="form">
-            <form name="contact_detail" class="contact_detail">
-                <div id="f_name"><input type="text" name="first_name" id="first_name" placeholder="first_name:"></div>
-                <div id="l_name"><input type="text" name="last_name" id="last_name" placeholder="last_name:"></div>
-                <div id="email"><input type="email" name="email" id="email_d" placeholder="email:"></div>
-                <div id="mobile"><input type="tel" name="phone_number" id="phone_number" maxlength="10" placeholder="Mobile_number"></div>
-                <div id="message"><textarea name="message_extra" id="message_extra" placeholder="message_extra"></textarea></div>
-                <div id="send_button"><input type="submit" name="submit_contact" id="submit_contact" value="SEND"></div>
-            </form>
-        </div>
-    </div>
-
-    <!-- ..................................................advertising area........................................................ -->
-    <div class="main_content_area">
-
-        <div class="content_area1">
-            <div>
-                <h1>This is where an awesome title goes</h1>
-                <p>And this text is copied pasted over and over and over over and over over over over and over over over and over</p>
-            </div>
-            <div id="design_it_div"><button type="button" name="design_it_now" id="design_it_now">Design it Now<button><div>
-        </div>
-
-      <div class="video-advertise">
-        <div style="padding-top: 20px;"></div>
-        <video controls poster="video_image.jpg">
-        </video>
-      </div>
-      <div>
-        <h1>Watch This</h1><br>
-        <h3>It's a Video, yo!</h3>
-        <p>And this is copied pasted over over and over over and over over over and over Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsam nesciunt voluptate deleniti facilis adipisci! over</p>
-        <button name="learn_more_web" class="learn_more">Learn More</button>
-      </div>
+<div class="header">
+    <div>My Shopping cart</div>
+    <div>Sign In/Register</div>
+</div>
+<div class="main">
+  <div class="navbar">
+    <div class="icon">
+      <div class="logo"> 
+        <img src="yard_sign.png" alt="logo">
+        <figcaption>Yard Sign</figcaption>
       </div>
     </div>
-
-    <!-- ............................................blog area....................................................................................... -->
-
-    <div class="main_blog_container">
-        <div class="blog">
-            <div><img src="project1.jpg" alt="project1"></div>
-            <h2>project1</h2>
-            <div id="blog_description"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem expedita vero inventore aperiam dolor.</span></div>
-        </div>
-        <div class="blog">
-            <h2>project2</h2>
-            <div><img src="project2.jpg" alt="image project2"></div>
-            <div id="blog_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti delectus dignissimos cum fugiat placeat? Fugiat, necessitatibus maiores.</div>
-        </div>
-        <div class="blog">
-            <h2>project3</h2>
-            <div><img src="project3.jpg" alt="image project3"></div>
-            <div id="blog_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quia temporibus asperiores consequuntur quae dolore rem possimus ut!</div>
-        </div>
-        <button name="learn_more_blog" class="learn_more_blog_button">Learn More</button>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Banner</a></li>
+        <li><a href="#">Accesories</a></li>
+        <li><a href="#">Gallary</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Price</a></li>
+        <li><a href="#">Material</a></li>
+        <li><a href="#">FAQ</a></li>
+        <button class="nav-btn">Custom-Quote</button>
+      </ul>
     </div>
+    <div class="content">
+      <h1>Big Heading</h1>
+      <h2>Small Sub Heading Here.</h2>
+      <p class="par">This is copy paste <br> again and again and again <br> copy paste again <br></p>
+      <button class="cn-btn">Get Started</button>
 
-    <!-- .....................................................Footer.............................................................................. -->
+      <div class="form">
+        <input type="text" name="First Name" placeholder="First Name"> <br>
+        <input type="text" name="Last Name" placeholder="Last Name"> <br>
+        <input type="email" name="Email" placeholder="Email"> <br>
+        <input type="number" name="PhoneNumber" placeholder="Phone Number"> <br>
+        <input type="text" name="MessageExtra" placeholder="MessageExtra">
+        <button class="form-btn"> <a href="#">Send</a></button>
+      </div>
 
-    <div class="footer">
+      <div class="content_area1">
         <div>
-            <h3>Address</h3>
-            <hr>
-            <p>B/N Nirma University, Ekyarth, near <br>mslbsr county rd, chsrodi</p>
-            <p>located in Ekyarth</p>
+            <h1>This is where an awesome title goes</h1>
+            <p>And this text is copied pasted over and over and over over and over over over over and over over over and over</p>
         </div>
-        <div>
-            <h3>Contact Us</h3>
-            <hr><br>
-            <em class="phone"><a href="telto:9909966467">+91 99990-77798</a></em><br>
-            <em class="fax"><a href="fexto:3485634589">+91 99999-54227</a></em><br>
-            <em class="envelop"><a href="mailto:raviroushan1982000@gmail.com">raviroushan1982000@gmail.com</a></em>
-
-        </div>
-        <div>
-            <h3>Products</h3>
-            <hr>
-            <br>
-            <ul>
-                <li>Yard Sign</li>
-                <li>Overview</li>
-                <li>onprintshop</li>
-                <li>car management</li>
-                <li>design service</li>
-                <li>radixweb</li>
-            </ul>
-        </div>
+      <div id="design_it_div"><button type="button" name="design_it_now" id="design_it_now">Design it Now<button><div>
     </div>
+      
+    </div>
+    
+  </div>
+  <div class="video-advertise">
+    <div style="padding-top: 20px;"></div>
+    <video controls poster="video_image.jpg">
+    </video>
+
+    <div class="video-text">
+      <h1>Watch This</h1><br>
+      <h3>It's a Video, yo!</h3>
+      <p>And this is copied pasted over over and over over and over over over and over Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsam nesciunt voluptate deleniti facilis adipisci! over</p>
+      <button name="learn_more_web" class="learn_more">Learn More</button>
+    </div>
+  </div>
+
+  <div class="blog">
+    <div class="column">
+      <img src="project1.jpg" alt="Snow" style="width:100%">
+      <figcaption>Project One</figcaption>
+      <div id="blog_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti delectus dignissimos cum fugiat placeat? Fugiat, necessitatibus maiores.</div>
+    </div>
+    <div class="column">
+      <img src="project2.jpg" alt="Forest" style="width:100%">
+      <figcaption>Project Two</figcaption>
+      <div id="blog_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti delectus dignissimos cum fugiat placeat? Fugiat, necessitatibus maiores.</div>
+    </div>
+    <div class="column">
+      <img src="project3.jpg" alt="Mountains" style="width:100%">
+      <figcaption>Project Three</figcaption>
+      <div id="blog_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti delectus dignissimos cum fugiat placeat? Fugiat, necessitatibus maiores.</div>
+    </div>
+  </div>
+
+<div class="footer">
+  <div>
+      <h3>Address</h3>
+      <hr>
+      <p>B/N Nirma University, Ekyarth, near <br>mslbsr county rd, chsrodi</p>
+      <p>located in Ekyarth</p>
+  </div>
+  <div>
+      <h3>Contact Us</h3>
+      <hr><br>
+      <em class="phone"><a href="telto:9909966467">+91 99990-77798</a></em><br>
+      <em class="fax"><a href="fexto:3485634589">+91 99999-54227</a></em><br>
+      <em class="envelop"><a href="mailto:raviroushan1982000@gmail.com">raviroushan1982000@gmail.com</a></em>
+
+  </div>
+  <div>
+      <h3>Products</h3>
+      <hr>
+      <br>
+      <ul>
+          <li>Yard Sign</li>
+          <li>Overview</li>
+          <li>onprintshop</li>
+          <li>car management</li>
+          <li>design service</li>
+          <li>radixweb</li>
+      </ul>
+  </div>
+</div>
+  
+</div>
+
 
 </body>
-
 </html>
